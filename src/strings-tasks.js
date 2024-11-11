@@ -536,7 +536,7 @@ function encodeToRot13(str) {
   return str.replace(
     /[a-zA-Z]/g,
 
-    function (char) {
+    function rot13Char(char) {
       // Получаем код символа
       const code = char.charCodeAt(0);
 
